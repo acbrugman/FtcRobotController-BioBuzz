@@ -13,6 +13,9 @@ public class GamePadPractice extends OpMode{
     public void loop() {
          telemetry.addData("x", gamepad1.left_stick_x);
          telemetry.addData("y", gamepad1.left_stick_y);
-         telemetry.addData("a button", gamepad1.a);
+         telemetry.addData("b button", gamepad1.b);
+         telemetry.addData("left trigger", gamepad1.left_trigger);
+         telemetry.addData("right trigger button", gamepad1.right_trigger);
+         telemetry.addData("left+right trigger", gamepad1.left_trigger+gamepad1.right_trigger);
      }
 }
